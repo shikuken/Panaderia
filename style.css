@@ -1,0 +1,41 @@
+body{
+    background-color:rgb(218, 146, 12);
+}
+
+.image{
+    margin-top: 10px;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: rgba(223, 11, 11, 0.976);
+    width: 80%;
+    max-width:350px;
+    margin: 0 auto;
+    
+}
+tr{
+    font-size: 35px;
+    font-weight: 100;
+    font-style: italic;
+}
+caption{
+    font-size: 50px;
+}
+main{
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.productos{
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+hr{
+  border: none; 
+  border-top: 5px solid #333333; 
+  margin: 20px 0; 
+}
