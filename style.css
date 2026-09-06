@@ -3,6 +3,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.postres{
+    background-color: orange;
+}
+
 .image {
     margin-top: 10px;
 }
