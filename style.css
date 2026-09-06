@@ -1,20 +1,21 @@
 body {
-    background-color: rgb(218, 146, 12);
+    background-color: #C49A6C;
     font-family: Arial, sans-serif;
-}
-
-.postres{
-    background-color: orange;
 }
 
 .image {
     margin-top: 10px;
 }
 
+.ubicacion {
+    text-align: center;
+    margin-top: 20px;
+}
+
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
-    color: rgba(223, 11, 11, 0.976);
+    color: #4A3525;
     width: 80%;
     max-width: 350px;
     margin: 0 auto;
@@ -29,6 +30,8 @@ tr {
 
 caption {
     font-size: 50px;
+    color: #4A3525;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 main {
