@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quejas y reclamos</title>
+</head>
+<body>   
+  <section class="pqrs">
+    <h1>Quejas y reclamos</h1>
+
+    <form action="procesar_queja.php" method="POST">
+        <div class="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+        </div> 
+
+        <div class="formulario">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br><br>
+        </div>
+
+        <div class="formulario">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+        </div>
+
+        <div class="formulario">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required><br><br>
+        </div>
+
+        <div class="formulario">
+            <label for="tipo">Tipo de queja o reclamo:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="">Seleccione una opción</option>
+                <option value="queja">Queja</option>
+                <option value="reclamo">Reclamo</option>
+            </select><br><br>
+        </div>
+
+        <div class="formulario">
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea><br><br>
+        </div>
+
+        <button class="boton" type="submit">Enviar</button>
+    </form>
+    </section>  
+     <main>
+        <table class="productos">
+            <caption><strong>Nuestros Productos</strong></caption>
+            <tr>
+                <th><a href="pasteles.html">Pasteles</a></th>
+                <th><a href="postres.html">Postres</a></th>
+                <th><a href="pan.html">Pan tradicional</a></th>
+            </tr>
+        </table>
+    </main>
+    
+</body>
+</html>

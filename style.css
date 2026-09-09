@@ -12,6 +12,10 @@ body {
     margin-top: 20px;
 }
 
+.historia{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
@@ -46,6 +50,17 @@ main {
     margin: 0 auto;
 }
 
+.productos a {
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-decoration: none;
+    color: #4A3525;
+}
+
+.productos a:hover {
+    color: #9c5a28;
+    text-shadow: 0 0 8px rgba(156, 90, 40, 0.7);
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -59,7 +74,18 @@ li {
     text-align: center;
     vertical-align: top;
     margin: 20px 15px;
+    background-color: #F5F5F5;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
+li:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+}
+
 
 li h2 {
     font-size: 20px;
@@ -69,6 +95,8 @@ li h2 {
 
 li p {
     font-size: 18px;
+    font-weight: 600;
+    color: #9c5a28;
     margin: 0;
 }
 
@@ -81,4 +109,144 @@ hr {
 footer {
     text-align: center;
     font-size: 20px;
+}
+
+.pqrs{
+    background-color: #4A3525;
+    max-width: 580px;
+    padding: 30px 35px;
+    margin: 30px auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+    text-align: left;
+}
+
+.pqrs h1 {
+    color: #C49A6C;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.formulario label {
+    font-weight: 600;
+    font-size: 15px;
+    color: #C49A6C;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select {
+    font-family: Arial, sans-serif;
+    padding: 10px 14px;
+    border: 1px solid #C49A6C;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #4A3525;
+    background-color: #F5F5F5;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.boton {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #C49A6C;
+    color: #4A3525;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s, ease, transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 10px;
+}
+
+.boton:hover {
+    background-color: #B07A5A;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ==================================================
+   DISEÑO RESPONSIVE (Media Queries)
+   ================================================== */
+
+/* Tablets y pantallas medianas (<= 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 34px;
+    }
+
+    caption {
+        font-size: 36px;
+    }
+
+    tr {
+        font-size: 26px;
+    }
+
+    .contenedor-pqr {
+        padding: 25px 20px;
+        margin: 20px 10px;
+    }
+
+    .contenedor-pqr h2 {
+        font-size: 24px;
+    }
+
+    li {
+        width: 42%;
+        min-width: 200px;
+        margin: 15px 8px;
+    }
+}
+
+/* Teléfonos y pantallas pequeñas (<= 480px) */
+@media (max-width: 480px) {
+    body {
+        padding: 6px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    caption {
+        font-size: 28px;
+    }
+
+    tr {
+        font-size: 20px;
+    }
+
+    .productos {
+        border-spacing: 6px;
+    }
+
+    li {
+        width: 88%;
+        max-width: 260px;
+        margin: 15px auto;
+        display: block;
+    }
+
+    .contenedor-pqr {
+        padding: 20px 15px;
+    }
+
+    .btn-enviar {
+        font-size: 15px;
+    }
 }
