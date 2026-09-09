@@ -7,48 +7,58 @@
     <title>Quejas y reclamos</title>
 </head>
 <body>   
-  <section class="pqrs">
-    <h1>Quejas y reclamos</h1>
+    <!-- ==================== SECCIÓN DEL FORMULARIO PQRS ==================== -->
+    <section class="pqrs">
+        <h1>Quejas y reclamos</h1>
 
-    <form action="procesar_queja.php" method="POST">
-        <div class="formulario">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required><br><br>
-        </div> 
+        <form action="procesar_queja.php" method="POST">
+            <!-- Campo Nombre -->
+            <div class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+            </div> 
 
-        <div class="formulario">
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required><br><br>
-        </div>
+            <!-- Campo Apellido -->
+            <div class="formulario">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required><br><br>
+            </div>
 
-        <div class="formulario">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required><br><br>
-        </div>
+            <!-- Campo Correo Electrónico -->
+            <div class="formulario">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+            </div>
 
-        <div class="formulario">
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required><br><br>
-        </div>
+            <!-- Campo Teléfono -->
+            <div class="formulario">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required><br><br>
+            </div>
 
-        <div class="formulario">
-            <label for="tipo">Tipo de queja o reclamo:</label>
-            <select id="tipo" name="tipo" required>
-                <option value="">Seleccione una opción</option>
-                <option value="queja">Queja</option>
-                <option value="reclamo">Reclamo</option>
-            </select><br><br>
-        </div>
+            <!-- Selector de Tipo de Solicitud -->
+            <div class="formulario">
+                <label for="tipo">Tipo de queja o reclamo:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="queja">Queja</option>
+                    <option value="reclamo">Reclamo</option>
+                </select><br><br>
+            </div>
 
-        <div class="formulario">
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea><br><br>
-        </div>
+            <!-- Campo Mensaje / Detalle -->
+            <div class="formulario">
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea><br><br>
+            </div>
 
-        <button class="boton" type="submit">Enviar</button>
-    </form>
+            <!-- Botón de Envío -->
+            <button class="boton" type="submit">Enviar</button>
+        </form>
     </section>  
-     <main>
+
+    <!-- ==================== MENÚ DE NAVEGACIÓN (PRODUCTOS) ==================== -->
+    <main>
         <table class="productos">
             <caption><strong>Nuestros Productos</strong></caption>
             <tr>

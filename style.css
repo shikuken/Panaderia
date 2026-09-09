@@ -1,10 +1,18 @@
+/* ==================================================
+   ESTILOS GENERALES Y CUERPO
+   ================================================== */
 body {
     background-color: #C49A6C;
     font-family: Arial, sans-serif;
 }
 
+/* ==================================================
+   IMÁGENES Y UBICACIÓN
+   ================================================== */
 .image {
     margin-top: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
 .ubicacion {
@@ -12,10 +20,18 @@ body {
     margin-top: 20px;
 }
 
-.historia{
+.ubicacion img {
+    max-width: 100%;
+    height: auto;
+}
+
+.historia {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* ==================================================
+   TIPOGRAFÍA Y TÍTULOS
+   ================================================== */
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
@@ -44,6 +60,9 @@ main {
     margin: 0 auto;
 }
 
+/* ==================================================
+   MENÚ DE PRODUCTOS (TABLA DE NAVEGACIÓN)
+   ================================================== */
 .productos {
     border-collapse: separate;
     border-spacing: 10px;
@@ -61,6 +80,9 @@ main {
     text-shadow: 0 0 8px rgba(156, 90, 40, 0.7);
 }
 
+/* ==================================================
+   MOSAICO DE PRODUCTOS (LISTA DE TARJETAS UL / LI)
+   ================================================== */
 ul {
     list-style: none;
     padding: 0;
@@ -86,6 +108,10 @@ li:hover {
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
 }
 
+li img {
+    border-radius: 8px;
+    object-fit: cover;
+}
 
 li h2 {
     font-size: 20px;
@@ -100,6 +126,9 @@ li p {
     margin: 0;
 }
 
+/* ==================================================
+   LÍNEAS DIVISORIAS Y PIE DE PÁGINA
+   ================================================== */
 hr {
     border: none;
     border-top: 5px solid #333333;
@@ -111,7 +140,10 @@ footer {
     font-size: 20px;
 }
 
-.pqrs{
+/* ==================================================
+   FORMULARIO PQRS
+   ================================================== */
+.pqrs {
     background-color: #4A3525;
     max-width: 580px;
     padding: 30px 35px;
@@ -153,6 +185,13 @@ footer {
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
+.formulario input:focus,
+.formulario textarea:focus,
+.formulario select:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(196, 154, 108, 0.7);
+}
+
 .boton {
     font-family: Arial, sans-serif;
     font-size: 17px;
@@ -164,7 +203,7 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: background-color 0.2s, ease, transform 0.2s ease, box-shadow 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
     margin-top: 10px;
 }
 
@@ -197,12 +236,12 @@ button:active {
         font-size: 26px;
     }
 
-    .contenedor-pqr {
+    .pqrs {
         padding: 25px 20px;
         margin: 20px 10px;
     }
 
-    .contenedor-pqr h2 {
+    .pqrs h1 {
         font-size: 24px;
     }
 
@@ -242,11 +281,11 @@ button:active {
         display: block;
     }
 
-    .contenedor-pqr {
+    .pqrs {
         padding: 20px 15px;
     }
 
-    .btn-enviar {
+    .boton {
         font-size: 15px;
     }
 }
